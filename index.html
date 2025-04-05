@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lointaine Investment</title>
+  <style>
+    :root {
+      --primary-color: #0cc0df;
+      --background-color: #ffffff;
+      --text-color: #000000;
+      --card-bg: #f0f0f0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background-color: #000000;
+        --text-color: #ffffff;
+        --card-bg: #121212;
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      background-color: var(--primary-color);
+      border: none;
+      padding: 14px 24px;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .chart-box {
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 400px;
+    }
+
+    .ticker-bar {
+      background: var(--card-bg);
+      padding: 10px;
+      font-size: 14px;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: var(--card-bg);
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 1px solid var(--primary-color);
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ticker-bar">
+    AAPL ↑ 169.72 &nbsp;&nbsp; Google 128.30 &nbsp;&nbsp; SPY ↑ 4112.39
+  </div>
+  <div class="container">
+    <img src="https://via.placeholder.com/120" alt="Lointaine Logo" class="logo">
+    <h1>Lointaine<br>Investment</h1>
+    <button class="btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712107.png" alt="Robot">
+      Lointaine Advisor
+    </button>
+
+    <div class="chart-box">
+      <h3>S&P 500</h3>
+      <img src="https://dummyimage.com/400x200/0cc0df/000&text=Chart+Here" alt="chart" style="width:100%; border-radius: 10px;">
+    </div>
+
+    <h2>News</h2>
+    <p>Temporary financial market heading here</p>
+  </div>
+
+  <div id="alertas" class="section">
+    <h2>Alertas</h2>
+    <div id="premiumAlerts">
+      <p>🔒 Esta sección está disponible solo para usuarios con plan activo.</p>
+      <button onclick="window.location.href='https://tupagina.com/pago'">💳 Suscribirme</button>
+    </div>
+    <div id="alertSystem" style="display:none;">
+      <h3>Tus Alertas Activas</h3>
+      <ul>
+        <li>✔️ TSLA sube +5%</li>
+        <li>✔️ AAPL cae -3%</li>
+      </ul>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#mercado">Mercado</a>
+    <a href="#discusion">Discusión</a>
+    <a href="#alertas">Alertas</a>
+    <a href="#perfil">Perfil</a>
+  </nav>
+</body>
+</html>
